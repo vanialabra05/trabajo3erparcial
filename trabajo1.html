@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Sumador de Numero</title><!--Titulo de la pagina -->
+
+</head>
+
+<body>
+
+
+
+<h1>Sumador de Numeros</h1> <!--Encabezado principal -->
+
+<label for="num1">Numero 1 :</label> <!--Etiqueta para el primer numero -->
+<input type="number" id="num1"> <!--Entrada para el segundo numero -->
+
+<label for="num2"></label>Numero 2:</label> <!--Etiqueta para el segundo numero-->
+<input type="number" id="num2"> <!--Entrada para el segundo numero-->
+
+
+
+<button onclick="sumar()">Sumar</button> <!--Boton que llama a la funcion sumar () -->
+<p id="resultado"></p> <!--Parrafo donde se mostrara el resultado de la suma-->
+
+
+
+
+
+<h2>restador de Numeros</h2>
+<label for="num3">Numero 3</label>
+<input type= "number" id="num3">
+
+<label for="num4" >Numero 4:</label>
+<input type="number" id="num4">
+
+<button onclick="restar()">restar</button>
+<p id="resultadof"></p>
+
+
+
+
+
+<h3> calificaciones de los periodos</h3>
+<label for="num5">Numero 5 :</label>
+<input type="number" id="num5">
+
+<label for="num6">Numero 6:</label>
+<input type="number" id="num6">
+
+<label for="num7">Numero 7:</label>
+<input type="number" id="num7">
+
+<button onclick="sumas()">sumar</button>
+<p id="resultadocalificaciones"></p>
+<html>
+<body>
+
+
+<script>
+function sumar() {
+var num1= parseFloat(document.getElementById('num1').value);
+var num2= parseFloat(document.getElementById('num2').value);
+
+var resultado= num1 + num2;
+
+document.getElementById('resultado').innerText = "El resultado de la resta es: " + resultado;
+
+}
+
+function restar() {
+
+var num3 = parseFloat(document.getElementById('num3').value);
+var num4 = parseFloat(document.getElementById('num4') .value);
+var resultadof = num3 - num4;
+
+
+    document.getElementById("resultadof").innerText = "El resultado de la resta es: " + resultadof;
+
+}
+function sumas() {
+   
+var num5 = parseFloat(document.getElementById('num5').value);
+var num6 = parseFloat(document.getElementById('num6').value);
+var num7 = parseFloat(document.getElementById('num7').value);
+
+var resultadocalificaciones = (num5 + num6 + num7)/3;
+
+
+document.getElementById("resultadocalificaciones").innerText = "El resultado de la calificacion es: " + resultadocalificaciones;
+}
+</script>
+</body>
+
+
+</html>
